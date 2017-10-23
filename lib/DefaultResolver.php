@@ -629,6 +629,10 @@ REGEX;
     }
 
     private function processDecodedResponse($serverId, $requestId, $response) {
+        if (empty($this->pendingRequests[$requestId])) {
+            return;
+        }
+
         list($promisor, $name, $type, $uri, $timeout) = $this->pendingRequests[$requestId];
 
         // Retry via tcp if message has been truncated
