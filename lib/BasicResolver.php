@@ -89,6 +89,7 @@ final class BasicResolver implements Resolver {
                 yield $this->reloadConfig();
             }
 
+            // @TODO remove line below    
             $inAddr = @\inet_pton($name);
 
             if ($inAddr !== false) {
