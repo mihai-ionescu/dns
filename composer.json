@@ -33,6 +33,12 @@
             "email": "aaron@trowski.com"
         }
     ],
+    "repositories":[
+        {
+            "type": "git",
+            "url": "https://github.com/mihai-ionescu/uri"
+        }
+    ],
     "require": {
         "php": ">=7.0",
         "amphp/amp": "^2",
@@ -40,7 +46,7 @@
         "amphp/cache": "^1.2",
         "amphp/file": "^0.2 || ^0.3",
         "amphp/parser": "^1",
-        "amphp/uri": "^0.1",
+        "amphp/uri": "dev-tvg",
         "amphp/windows-registry": "^0.3",
         "daverandom/libdns": "^2.0.1"
     },
