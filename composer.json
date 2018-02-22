@@ -33,10 +33,30 @@
             "email": "aaron@trowski.com"
         }
     ],
-    "repositories":[
+    "repositories": [
         {
             "type": "git",
             "url": "https://github.com/mihai-ionescu/uri"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/mihai-ionescu/parallel"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/mihai-ionescu/dns"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/mihai-ionescu/artax"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/mihai-ionescu/socket"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/mihai-ionescu/file"
         }
     ],
     "require": {
