@@ -89,9 +89,11 @@ final class BasicResolver implements Resolver {
                 yield $this->reloadConfig();
             }
 
-            // @TODO remove line below
-            $inAddr = @\inet_pton($name);
-            $inAddr = false;
+            /**
+            * @author mihai
+            * added filter_var before calling inet_pton to avoid warning
+            */
+            $inAddr = \filter_var($name, FILTER_VALIDATE_URL) ? \inet_pton($name) : false;
 
             if ($inAddr !== false) {
                 // It's already a valid IP, don't query, immediately return
