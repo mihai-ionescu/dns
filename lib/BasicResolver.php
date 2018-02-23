@@ -89,8 +89,9 @@ final class BasicResolver implements Resolver {
                 yield $this->reloadConfig();
             }
 
-            // @TODO remove line below    
+            // @TODO remove line below
             $inAddr = @\inet_pton($name);
+            $inAddr = false;
 
             if ($inAddr !== false) {
                 // It's already a valid IP, don't query, immediately return
